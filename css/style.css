@@ -5,14 +5,14 @@
 }
 
 body{
-    background-image: linear-gradient(120deg,#f6d365,#fda085);
+    background-image: linear-gradient(120deg,#1955c5,#c4f0fd);
     color: rgb(66, 62, 62);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     min-height: 100vh;
 }
 
 header{
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 header,form{
@@ -133,4 +133,25 @@ select::after{
 .select:hover::after{
     background: white;
     color:#ff6f47;
+}
+
+@media (max-width:670px) {
+    header, form{
+        display: flex;
+        flex-direction: column;
+    }
+    .todo-button{
+        margin-top: 1rem;
+    }
+    
+}
+
+@media (max-width:430px){
+    form input{
+        width: 75%;
+        font-size: 1em;
+    }
+    .todo-button{
+        width: 50%;
+    }
 }

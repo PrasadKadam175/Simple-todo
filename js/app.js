@@ -14,7 +14,7 @@ fiterOption.addEventListener('click',filterTodo);
 
 //Functions
 function addTodo(event){
-    //prevcent form from submitting
+    //prevent form from submitting
     event.preventDefault();
     // create todo div in html dynamically
     const todoDiv = document.createElement("div");
@@ -142,7 +142,7 @@ function removeLocalTodos(todo){
             todos = JSON.parse(localStorage.getItem('todos'));
         }
         const todoIndex = todo.children[0].innerText;
-        //remove selected indexof element 1 = number elements tobe removed
+        //remove selected indexof element , 1 = number elements tobe removed
         todos.splice(todos.indexOf(todoIndex),1);
         localStorage.setItem('todos',JSON.stringify(todos));
 }
