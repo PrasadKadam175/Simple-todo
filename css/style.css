@@ -151,7 +151,5 @@ select::after{
         width: 75%;
         font-size: 1em;
     }
-    .todo-button{
-        width: 50%;
-    }
+    
 }
